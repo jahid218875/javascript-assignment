@@ -2,10 +2,17 @@
 
 
 function feetToMile(feet) {
-    var mile = feet/5280;
-    return mile;
+
+    if(feet <= 0){
+        return ("Distance cannot be negative");
+    }
+    else if(mile = feet/5280){
+            return mile;
+    }
+    
 }
-var inputFeet = feetToMile(5280);
+
+var inputFeet = feetToMile(21120);
 console.log(inputFeet + " Mile");
 
 
@@ -51,13 +58,13 @@ function woodCalculator(chair, table, bed){
     }
     
     var inputFloorNumber = brickCalculator(4);
-    console.log(inputFloorNumber);
+    console.log("Total Bricks = " + inputFloorNumber);
 
     
 
 
 
-    // tinyFriend
+ // tinyFriend
 
 
     function tinyFriend(names) {
@@ -71,4 +78,4 @@ function woodCalculator(chair, table, bed){
     return smallName;
 }
 var friendSmallName = tinyFriend(["shahid", "jahidul", "islam", "momin ur rashidnode"]);
-console.log(friendSmallName);
+console.log("Friends Small Name: " + friendSmallName);
