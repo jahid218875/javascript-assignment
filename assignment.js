@@ -25,8 +25,8 @@ console.log(inputFeet + " Mile");
 function woodCalculator(chair, table, bed){
     var chairWood = chair * 3;
     var tableWood = table * 5;
-    var khatWood = bed * 7;
-    var totalWood = chairWood + tableWood + khatWood;
+    var bedtWood = bed * 7;
+    var totalWood = chairWood + tableWood + bedtWood;
     return totalWood;
 }
 
